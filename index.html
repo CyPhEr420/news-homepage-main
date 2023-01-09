@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+
+<body>
+
+  <!-- Home
+  New
+  Popular
+  Trending
+  Categories
+
+  The Bright Future of Web 3.0?
+
+  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?
+
+  Read more
+
+  
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+  
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+  
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities. -->
+
+  <main class="main">
+
+    <nav class="nav">
+      <div class="logo"> <img src="./assets/images/logo.svg" alt="logo"></div>
+
+      <div class="nav-list-container">
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">New</a></li>
+          <li><a href="#">Popular</a></li>
+          <li><a href="#">Trending</a></li>
+          <li><a href="#">Categories</a></li>
+        </ul>
+      </div>
+      <div class="menu-container">
+        <img class="menu" src="./assets/images/icon-menu.svg" alt="menu-icon">
+        <img class="close" src="./assets/images/icon-menu-close.svg" alt="close-icon">
+      </div>
+    </nav>
+
+    <header>
+      <article class="main-article">
+        <div class="main-article-img">
+          <img class="desktop" src="./assets/images/image-web-3-desktop.jpg" alt="article-image">
+          <img class="mobile" src="./assets/images/image-web-3-mobile.jpg" alt="article-image">
+        </div>
+        <div class="main-article-info">
+          <h1 class="main-article-title">
+            The Bright Future of Web 3.0?
+          </h1>
+          <div class="main-article-desc">
+            <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the
+              hands of the people.
+              But is it really fulfilling its promise?</p>
+            <button class="btn">Read more</button>
+          </div>
+        </div>
+      </article>
+      <div class="article-container">
+        <h1>New</h1>
+        <div class="articles">
+          <div class="article-item">
+            <h3>Hydrogen VS Electric Cars</h2>
+              <p>
+                Will hydrogen-fueled cars ever catch up to EVs?
+              </p>
+          </div>
+          <div class="article-item">
+            <h3>The Downsides of AI Artistry</h2>
+              <p>
+                What are the possible adverse effects of on-demand AI image generation?
+              </p>
+          </div>
+          <div class="article-item">
+            <h3>
+              Is VC Funding Drying Up?
+              </h2>
+              <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+
+      </div>
+    </header>
+
+    <div class="main-articles-container">
+      <div class="new-article">
+        <img src="./assets/images/image-retro-pcs.jpg" alt="retro-pc">
+        <div class="new-article-info">
+          <h1>01</h1>
+          <h3>Reviving Retro PCs</h3>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="new-article">
+        <img src="./assets/images/image-top-laptops.jpg" alt="top-laptop">
+        <div class="new-article-info">
+          <h1>02</h1>
+          <h3>Top 10 Laptops of 2022</h3>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="new-article">
+        <img src="./assets/images/image-gaming-growth.jpg" alt="retro-pc">
+        <div class="new-article-info">
+          <h1>01</h1>
+          <h3>The Growth of Gaming</h3>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+
+
+
+
+
+
+  <script>
+    const menuImg = document.querySelector('.menu-container');
+    const navContainer = document.querySelector('.nav-list-container');
+    menuImg.addEventListener('click', () => {
+      navContainer.classList.toggle('active');
+      menuImg.classList.toggle('active');
+    })
+
+  </script>
+
+
+
+
+</body>
+
+</html>
